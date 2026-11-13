@@ -6,213 +6,103 @@
   <meta name="author" content="Saffet Kaan Şeker">
   <meta name="description" content="Saffet Kaan Şeker CV page.">
   <title>My CV</title>
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet">
-  <!-- Template: MyResume by BootstrapMade | https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="index-page">
-  <header id="header" class="header d-flex flex-column justify-content-center">
-    <i class="header-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></i>
-    <nav id="navmenu" class="navmenu" aria-label="Main navigation">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#skills"><i class="bi bi-lightbulb navicon"></i><span>Skills</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#projects"><i class="bi bi-grid navicon"></i><span>Projects</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
+<body>
+  <!-- Adapted from Template 2: MyResume (BootstrapMade). -->
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation">☰</button>
+  <header class="sidebar" id="navigation">
+    <nav aria-label="Main navigation">
+      <a class="nav-link active" href="#home"><span class="nav-icon" aria-hidden="true">⌂</span><span class="nav-text">Home</span></a>
+      <a class="nav-link" href="#about"><span class="nav-icon" aria-hidden="true">◉</span><span class="nav-text">About</span></a>
+      <a class="nav-link" href="#skills"><span class="nav-icon" aria-hidden="true">✧</span><span class="nav-text">Skills</span></a>
+      <a class="nav-link" href="#resume"><span class="nav-icon" aria-hidden="true">▤</span><span class="nav-text">Resume</span></a>
+      <a class="nav-link" href="#projects"><span class="nav-icon" aria-hidden="true">◇</span><span class="nav-text">Projects</span></a>
     </nav>
   </header>
-
-  <main class="main">
-    <section id="hero" class="hero section light-background">
-      <img src="assets/img/hero-bg.jpg" alt="Abstract technology illustration representing artificial intelligence and connected data">
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 col-xl-9">
-            <div class="eyebrow">AI SYSTEMS · SOFTWARE · GROWTH OPERATIONS</div>
-            <h1>Saffet Kaan<br>Şeker<span class="name-dot">.</span></h1>
-            <p>I'm an <span class="typed" data-typed-items="AI Systems Student, Outbound Operations Team Lead, Web Developer">AI Systems Student</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <p class="hero-description">Engineering student at Vilnius TECH, connecting practical AI tools with software and growth operations.</p>
-            <div class="hero-actions">
-              <a class="primary-link" href="#about">Explore my CV <i class="bi bi-arrow-down-right"></i></a>
-              <a class="secondary-link" href="https://www.linkedin.com/in/kaanseker/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="bi bi-box-arrow-up-right"></i></a>
-            </div>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow">MY PERSONAL CV</span>
+          <h1>Saffet Kaan <span>Şeker</span></h1>
+          <p class="hero-role">AI Engineering Student <span class="amp">&amp;</span><br>Outbound Operations Team Lead</p>
+          <p class="hero-intro">Combining artificial intelligence, software development, and data-driven business operations.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#about">About me <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="https://github.com/Academistt" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a>
           </div>
+          <p class="location">Vilnius, Lithuania</p>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/img/ai-engineering.svg" alt="Illustration of artificial intelligence and connected digital systems" width="560" height="500">
         </div>
       </div>
     </section>
-
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Engineering mindset. Practical execution.</p>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center align-items-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid profile-art" alt="AI and software development illustration with KS initials">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>AI Systems Student &amp; Growth Operations Lead</h2>
-            <p class="fst-italic py-3">I study Informatics Engineering with an AI Systems specialization at Vilnius TECH and work on outbound operations at Triarii Growth.</p>
-            <div class="row">
-              <div class="col-md-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i><strong>Name:</strong><span>Saffet Kaan Şeker</span></li>
-                  <li><i class="bi bi-chevron-right"></i><strong>Location:</strong><span>Vilnius, Lithuania</span></li>
-                  <li><i class="bi bi-chevron-right"></i><strong>University:</strong><span>Vilnius TECH</span></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i><strong>Degree:</strong><span>B.Eng. (in progress)</span></li>
-                  <li><i class="bi bi-chevron-right"></i><strong>Focus:</strong><span>AI Systems &amp; Automation</span></li>
-                  <li><i class="bi bi-chevron-right"></i><strong>Current role:</strong><span>Outbound Operations Team Lead</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3">My work combines research, lead qualification, data-driven decision-making, and operational execution. On the technical side, I explore Python, web technologies, and AI-assisted workflows to make repetitive tasks more efficient and reliable.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="skills section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Areas I use and continue to develop.</p>
-      </div>
-      <div class="container" data-aos="fade-up">
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="cv-card h-100">
-              <div class="cv-card-icon"><i class="bi bi-code-slash"></i></div>
-              <h3>Technical</h3>
-              <div class="chip-list"><span>Python</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>Next.js</span><span>MATLAB</span><span>AI Tools</span></div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="cv-card h-100">
-              <div class="cv-card-icon"><i class="bi bi-diagram-3"></i></div>
-              <h3>Growth &amp; Operations</h3>
-              <div class="chip-list"><span>ICP Research</span><span>Lead Qualification</span><span>LinkedIn Outreach</span><span>Process Design</span><span>SEO / GEO</span><span>Performance Analysis</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="resume" class="resume section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Education and professional experience.</p>
-      </div>
+    <section id="about" class="section section-white">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>B.Eng. Informatics Engineering</h4>
-              <h5>In progress</h5>
-              <p><em>Vilnius Gediminas Technical University (Vilnius TECH)</em></p>
-              <p>AI Systems specialization. Coursework and projects in programming, algorithms, and engineering fundamentals.</p>
-            </div>
-            <h3 class="resume-title">Professional Focus</h3>
-            <div class="resume-item">
-              <h4>Applied AI &amp; Software Development</h4>
-              <p>Interested in connecting practical AI systems with research workflows, automation, and usable web applications.</p>
-            </div>
+        <div class="section-heading">
+          <span class="section-kicker">INTRODUCTION</span>
+          <h2>About</h2>
+          <p>Engineering student with a focus on intelligent systems and practical technology applications.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-highlight">
+            <div class="highlight-symbol" aria-hidden="true">{ AI }</div>
+            <h3>Building at the intersection of AI and operations.</h3>
+            <p>I enjoy transforming complex problems into clear, measurable workflows.</p>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Experience</h3>
-            <div class="resume-item">
-              <h4>Outbound Operations Team Lead</h4>
-              <h5>2026 – Present</h5>
-              <p><em>Triarii Growth</em></p>
-              <ul>
-                <li>Coordinate outbound operations and lead research across client projects.</li>
-                <li>Build ICP criteria, lead-quality checks, and research workflows.</li>
-                <li>Track performance and improve campaign execution.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Growth Specialist</h4>
-              <h5>2026</h5>
-              <p><em>Triarii Growth</em></p>
-              <ul>
-                <li>Conducted market research and B2B prospect qualification.</li>
-                <li>Supported outreach, segmentation, and AI-assisted analysis.</li>
-              </ul>
+          <div class="about-copy">
+            <h3>AI Systems &amp; Software Development</h3>
+            <p>I'm studying Informatics Engineering with an AI Systems specialization at VILNIUS TECH. Alongside university, I work in outbound operations at Triarii Growth, where I coordinate research, team workflows, and data-driven prospecting.</p>
+            <p>My technical interests include Python, automation, web development, and the practical use of AI to improve business processes.</p>
+            <div class="detail-grid">
+              <div><strong>University</strong><span>VILNIUS TECH</span></div>
+              <div><strong>Field</strong><span>Informatics Engineering</span></div>
+              <div><strong>Specialization</strong><span>AI Systems</span></div>
+              <div><strong>Based in</strong><span>Vilnius, Lithuania</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="projects" class="section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Selected Work</h2>
-        <p>Practical areas where software and business operations meet.</p>
-      </div>
-      <div class="container" data-aos="fade-up">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6"><div class="cv-card h-100"><div class="cv-card-icon"><i class="bi bi-cpu"></i></div><h3>AI-Assisted Research</h3><p>Structured research workflows for evaluating potential customers and organizing qualified lead data.</p></div></div>
-          <div class="col-lg-4 col-md-6"><div class="cv-card h-100"><div class="cv-card-icon"><i class="bi bi-people"></i></div><h3>Outbound Operations</h3><p>Targeting criteria, campaign coordination, message quality checks, and performance review.</p></div></div>
-          <div class="col-lg-4 col-md-6"><div class="cv-card h-100"><div class="cv-card-icon"><i class="bi bi-window"></i></div><h3>Web &amp; Search</h3><p>Frontend development interests spanning Next.js websites, SEO, and content discoverability.</p></div></div>
+    <section id="skills" class="section section-muted">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">TOOLKIT</span><h2>Skills</h2><p>A combination of programming, AI tools, and operational problem-solving.</p></div>
+        <div class="skill-grid">
+          <article class="skill-card"><div class="skill-icon">01</div><h3>Programming</h3><p>Python, MATLAB, HTML, CSS, JavaScript</p></article>
+          <article class="skill-card"><div class="skill-icon">02</div><h3>AI &amp; Automation</h3><p>AI-assisted workflows, research, data processing</p></article>
+          <article class="skill-card"><div class="skill-icon">03</div><h3>Web Development</h3><p>Next.js, responsive websites, SEO fundamentals</p></article>
+          <article class="skill-card"><div class="skill-icon">04</div><h3>Operations</h3><p>Team coordination, outbound campaigns, ICP research</p></article>
         </div>
       </div>
     </section>
-
-    <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Professional networking and collaboration.</p>
+    <section id="resume" class="section section-white">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">BACKGROUND</span><h2>Resume</h2><p>Education and professional experience.</p></div>
+        <div class="resume-grid">
+          <div><h3 class="column-heading">Education</h3><div class="timeline-item"><span class="timeline-date">Current studies</span><h4>B.Eng. Informatics Engineering</h4><p class="timeline-place">VILNIUS TECH, Lithuania</p><p>AI Systems specialization, with coursework in programming and engineering.</p></div></div>
+          <div><h3 class="column-heading">Experience</h3><div class="timeline-item"><span class="timeline-date">2026 – Present</span><h4>Outbound Operations Team Lead</h4><p class="timeline-place">Triarii Growth</p><p>Coordinating outbound operations, lead research, and team execution across client projects.</p></div><div class="timeline-item"><span class="timeline-date">2026</span><h4>Growth Specialist</h4><p class="timeline-place">Triarii Growth</p><p>Worked on prospect research, campaign operations, and growth-focused workflows.</p></div></div>
+        </div>
       </div>
-      <div class="container" data-aos="fade-up">
-        <div class="contact-panel">
-          <div class="cv-card-icon"><i class="bi bi-linkedin"></i></div>
-          <h3>Connect on LinkedIn</h3>
-          <p>For professional conversations, you can reach me through my public LinkedIn profile.</p>
-          <a class="primary-link" href="https://www.linkedin.com/in/kaanseker/" target="_blank" rel="noopener noreferrer">View my profile <i class="bi bi-box-arrow-up-right"></i></a>
+    </section>
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">AREAS OF WORK</span><h2>Projects</h2><p>Selected areas where technology and business operations meet.</p></div>
+        <div class="projects-grid">
+          <article class="project-card"><span>AI / DATA</span><h3>AI-assisted Lead Research</h3><p>Research processes that combine structured data, qualification rules, and AI-assisted analysis.</p></article>
+          <article class="project-card"><span>OPERATIONS</span><h3>Outbound Workflow Design</h3><p>Repeatable methods for prospecting, quality control, and campaign coordination.</p></article>
+          <article class="project-card"><span>WEB</span><h3>Web &amp; SEO Development</h3><p>Responsive web interfaces and search-focused technical improvements.</p></article>
         </div>
       </div>
     </section>
   </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 class="sitename">Saffet Kaan Şeker</h3>
-      <p>AI Systems · Software · Growth Operations</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/kaanseker/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="copyright"><span>© 2026</span> <strong class="px-1 sitename">Saffet Kaan Şeker</strong></div>
-      <div class="credits">Template by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
-    </div>
-  </footer>
-
-  <a href="#hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <footer class="footer"><div class="container"><strong>Saffet Kaan Şeker</strong><p>AI Engineering Student · Vilnius, Lithuania</p><div class="footer-links"><a href="https://github.com/Academistt" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/kaanseker/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div><small>Template design adapted from <a href="https://bootstrapmade.com/free-html-bootstrap-template-my-resume/" target="_blank" rel="noopener noreferrer">MyResume by BootstrapMade</a>.</small></div></footer>
+  <a class="scroll-top" href="#home" aria-label="Back to top">↑</a>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
