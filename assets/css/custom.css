@@ -1,0 +1,295 @@
+/* Laboratory Work 9 - Custom CSS
+   Saffet Kaan Seker
+*/
+
+/* 1-2. Typography */
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #1f2937;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.02em;
+  color: #173b57;
+}
+
+h1 {
+  font-size: clamp(46px, 5.5vw, 74px);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b5d7a;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #176b87;
+}
+
+h4 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #244f63;
+}
+
+h5 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #345f70;
+}
+
+h6 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #486b78;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #536273;
+}
+
+/* 3. Buttons and links */
+.primary-button {
+  background: #0b6b7f;
+  border: 2px solid #0b6b7f;
+  border-radius: 14px;
+  padding: 13px 24px;
+  box-shadow: 0 8px 18px rgba(11, 107, 127, 0.2);
+}
+
+.primary-button:hover {
+  background: #084d5c;
+  border-color: #084d5c;
+  transform: translateY(-3px);
+}
+
+.primary-button:active {
+  background: #063b47;
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(11, 107, 127, 0.18);
+}
+
+main a:not(.primary-button):not(.nav-link):not(.scroll-top),
+.footer a {
+  color: #0b6b7f;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+main a:not(.primary-button):not(.nav-link):not(.scroll-top):hover,
+.footer a:hover {
+  color: #073f4d;
+}
+
+/* 4. Spacing and content blocks */
+#about,
+#resume,
+#portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#about .section-heading,
+#resume .section-heading,
+#portfolio .section-heading {
+  margin-bottom: 72px;
+}
+
+#about .about-grid,
+#resume .resume-grid,
+#portfolio .portfolio-grid {
+  margin-top: 12px;
+}
+
+.about-highlight,
+.about-copy {
+  padding: 36px;
+  border: 1px solid #c8dce5;
+  border-radius: 20px;
+  box-shadow: 0 14px 32px rgba(27, 70, 88, 0.1);
+}
+
+.about-copy {
+  background: #ffffff;
+}
+
+.timeline-item {
+  margin-bottom: 24px;
+  padding: 24px 26px;
+  border: 1px solid #d6e2e8;
+  border-left: 5px solid #0b6b7f;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(35, 74, 91, 0.08);
+  background: #ffffff;
+}
+
+.timeline-item::before {
+  display: none;
+}
+
+.portfolio-card {
+  border: 2px solid #d7e5eb;
+  border-radius: 22px;
+  box-shadow: 0 16px 32px rgba(28, 69, 86, 0.12);
+  overflow: hidden;
+}
+
+/* 5. Selected component 1: navigation container */
+.sidebar nav {
+  background: rgba(255, 255, 255, 0.96);
+  padding: 14px;
+  border: 1px solid #d2e1e7;
+  border-radius: 30px;
+  box-shadow: 0 12px 30px rgba(31, 63, 78, 0.16);
+}
+
+/* 5. Selected component 2: footer */
+.footer {
+  background: linear-gradient(135deg, #eaf5f7, #dcecf1);
+  border-top: 4px solid #0b6b7f;
+  padding: 58px 0 48px;
+  box-shadow: inset 0 10px 24px rgba(30, 72, 88, 0.06);
+}
+
+/* 6. Contrast and readability */
+.section-muted {
+  background: #f2f7f9;
+}
+
+.section-heading p,
+.about-copy p,
+.timeline-item p,
+.project-card p,
+.skill-card p {
+  color: #4d5f6e;
+}
+
+/* Complementary task 1: custom lists */
+.service-lists ul,
+.service-lists ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-lists > div:first-child > ul > li {
+  position: relative;
+  padding: 9px 12px 9px 34px;
+  margin-bottom: 10px;
+  background: #f4f9fa;
+  border-radius: 10px;
+}
+
+.service-lists > div:first-child > ul > li::before {
+  content: "✓";
+  position: absolute;
+  left: 11px;
+  top: 9px;
+  color: #0b6b7f;
+  font-weight: 700;
+}
+
+.service-lists ol {
+  counter-reset: steps;
+}
+
+.service-lists ol > li {
+  counter-increment: steps;
+  position: relative;
+  padding: 10px 12px 10px 46px;
+  margin-bottom: 10px;
+  background: #f4f9fa;
+  border-radius: 10px;
+}
+
+.service-lists ol > li::before {
+  content: counter(steps);
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #0b6b7f;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.service-lists ul ul {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #e6f0f3;
+  border-left: 4px solid #4b8799;
+  border-radius: 8px;
+}
+
+.service-lists ul ul li {
+  position: relative;
+  padding: 5px 5px 5px 20px;
+  margin-bottom: 4px;
+}
+
+.service-lists ul ul li::before {
+  content: "›";
+  position: absolute;
+  left: 4px;
+  color: #4b8799;
+  font-weight: 700;
+}
+
+/* Complementary task 2: table */
+.services-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border: 1px solid #bfd4dc;
+  border-radius: 12px;
+}
+
+.services-table th,
+.services-table td {
+  padding: 16px 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.services-table thead th {
+  background: #0b6b7f;
+  color: #ffffff;
+  font-weight: 700;
+  border-color: #0b6b7f;
+}
+
+.services-table tbody tr:nth-child(even) {
+  background: #edf5f7;
+}
+
+.services-table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+.services-table tbody tr:hover {
+  background: #dcecf1;
+}
+
+@media (max-width: 880px) {
+  #about,
+  #resume,
+  #portfolio {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .sidebar nav {
+    box-shadow: none;
+  }
+}
